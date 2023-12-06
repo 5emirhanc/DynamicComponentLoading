@@ -1,0 +1,15 @@
+<form nz-form  [formGroup]="validateForm" >
+  <nz-form-item>
+    <nz-form-label [nzSpan]="6" nzFor="email">E-mail</nz-form-label>
+    <nz-form-control [nzSpan]="14">
+      <input nz-input  formControlName="email" type="email">
+    </nz-form-control>
+  </nz-form-item >
+  <nz-form-item>
+    <nz-form-label [nzSpan]="6" nzFor="password">Şifre</nz-form-label>
+    <nz-form-control [nzSpan]="14">
+      <input nz-input formControlName="password" type="password" ><br><br>
+      <button class="btn" type="submit" (click)="onClick()">Kaydet</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
